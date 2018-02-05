@@ -26,8 +26,8 @@ public class Main {
                 matrix[i][N - down] = k;
                 ++k;
             } ++down;
-            for (int i = N-down; i >= 0; --i) { // ОШИБКА!!!
-                matrix[left][N-1 - i] = k;
+            for (int i = 0; i <= N-down; ++i) { // ОШИБКА!!!
+                matrix[left][N-down - i] = k;
                 ++k;
             } --left;
             for (int i = N-1 - up; i >= 0; --i) {
