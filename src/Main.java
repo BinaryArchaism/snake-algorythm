@@ -26,11 +26,11 @@ public class Main {
                 matrix[i][N - down] = k;
                 ++k;
             } ++down;
-            for (int i = 0; i <= N-down; ++i) { // ОШИБКА!!!
+            for (int i = 0; i <= N-down; ++i) {
                 matrix[left][N-down - i] = k;
                 ++k;
             } --left;
-            for (int i = N-1 - up; i >= 0; --i) {
+            for (int i = N-1 - up; i >= 0; --i) { // ОШИБКА!!!
                 matrix[i][up] = k;
                 ++k;
             } ++up;
